@@ -1,0 +1,93 @@
+/* Global font & dark base */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0c0f21; /* deep navy base */
+  color: #e5e5e5;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#root {
+  min-height: 100%;
+  background-color: #0c0f21; /* ensure React root stays dark */
+}
+
+/* Headings */
+h1 {
+  color: #f5f5f5; /* slightly bright white */
+}
+h2, h3 {
+  color: #e5e5e5; /* muted white for subheadings */
+}
+
+/* Paragraphs */
+p {
+  color: #cfd4dc; /* light grayish text */
+}
+
+/* Hero text gradient */
+.text-gradient {
+  background: linear-gradient(90deg, #f5f5f5, #f87171, #f5f5f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.button-hover {
+  transition: all 0.3s ease;
+  background-color: #b91c1c;
+  color: #f5f5f5;
+}
+.button-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(185, 28, 28, 0.25);
+}
+
+/* Step Cards */
+.card-hover {
+  transition: all 0.3s ease;
+  background-color: rgba(12,15,33,0.85); /* deep navy translucent */
+  border: 1px solid #1c2533; /* soft border */
+  backdrop-filter: blur(8px);
+  color: #e5e5e5; /* card text */
+}
+.card-hover:hover {
+  transform: scale(1.05);
+  border-color: rgba(185,28,28,0.4);
+}
+
+/* Step Numbers */
+.step-number {
+  color: #5c1f1f; /* subtle red numbers */
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Step Icons */
+.step-icon {
+  background: linear-gradient(to right, #b91c1c, #7c3aed);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #f5f5f5;
+}
+
+/* Final CTA */
+.final-cta h2, .final-cta p {
+  color: #f5f5f5;
+}
+.final-cta .register-button {
+  background-color: #b91c1c;
+  color: white;
+}
+.final-cta .register-button svg {
+  color: white;
+}
+
+/* Misc sections */
+.about-section, .jury-section, .how-it-works, .final-cta {
+  background: #0c0f21; /* deep navy base */
+  color: #e5e5e5;
+}
